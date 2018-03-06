@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 40%;
+    margin: 0 auto;
+}
+
+#frame {
+    top: 60px;
+    left: 60px;
+    position: relative;
+    width: 260px;
+    height: 260px;
+    border: 1px solid #c8c8cc;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+
+#frame:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+#voogs {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 320px;
+    min-height: 312px;
+    margin: 0 auto;
+    background-image: url('../img/voogx.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.eye-container {
+    position: absolute;
+    top: 54%;
+    left: 30%;
+    min-width: 100%;
+}
+    
+.eye {
+    position: relative;
+    float: left;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    overflow: hidden;
+    margin: 0 12px;
+    background-image: -webkit-radial-gradient(15px 15px, circle cover, #ececec, #fff)
+}
+  
+.eye-ball {   
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-image: -webkit-radial-gradient(15px 15px, circle cover, #444, #000);
+    /* animation: move 3s ease infinite; */
+}
+  
+.eye-ball-left {
+    bottom: 20%;
+    left: 20%;
+    /* -webkit-animation: move 3s ease infinite; */
+}
+  
+.eye-ball-right {
+    bottom: 20%;
+    right: 20%;
+    /* -webkit-animation: move 1s ease infinite; */
+}
+
+  
+@-webkit-keyframes move {
+    50% {
+      transform: translate(-2px, -25px);
+    }
+    75% {
+      transform: translate(10px, -25px)
+    }
+}
