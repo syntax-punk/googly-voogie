@@ -1,6 +1,6 @@
 $(document).ready(
 
-    $(window).bind('mousemove', function(event) {
+    $(window).on('mousemove touchmove', function(event) {
         mouse_pos = {
             'x': event.pageX,
             'y': event.pageY

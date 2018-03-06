@@ -90,9 +90,7 @@ body {
 
 .hero-text {
     position: absolute;
-    top: 180px;
     right: 10%;
-    font-size: 4em;
     font-family: 'Momstype', Times, serif;
     transition: all .2s ease;
 }
@@ -101,6 +99,20 @@ body {
     transform: rotate(-8deg);
 }
 
+
+@media only screen and (max-width: 1020px) {
+    .hero-text {
+        bottom: 180px;
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 1020px) {
+    .hero-text {
+        top: 180px;
+        font-size: 4em;
+    }
+}
   
 @-webkit-keyframes move {
     50% {
