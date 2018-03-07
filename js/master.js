@@ -2,6 +2,7 @@ $(document).ready(function() {
     $(window).on('mousemove touchmove', movedamnEyes);
 });
 
+//  eyes motion
 function movedamnEyes(event) {
 
     mouse_pos = {
@@ -46,10 +47,12 @@ function movedamnEyes(event) {
     });
 }
 
+// distance calc
 function get_distance(loc1, loc2) {
     return Math.sqrt(Math.pow((loc1.x - loc2.x), 2) + Math.pow((loc1.y - loc2.y), 2));
 }
 
+//  slope calc
 function getSlope(loc1, loc2) {
     return (loc1.y - loc2.y) / (loc1.x - loc2.x);
 }

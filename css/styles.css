@@ -1,6 +1,11 @@
 @font-face {
-    font-family: 'Momstype';
-    src:  url('../fonts/Mmtr.ttf') format('truetype');
+    font-family: 'Adler';
+    src:  url('../fonts/Adler.ttf') format('truetype');
+}
+
+
+* {
+    font-family: 'Adler', Times, serif;
 }
 
 body {
@@ -13,7 +18,9 @@ body {
     bottom: 0;
     left: 0;
     min-width: 100%;
-    min-height: 40%;
+    height: 120px;
+    text-align: center;
+    font-size: 2em;
     margin: 0 auto;
 }
 
@@ -91,7 +98,6 @@ body {
 .hero-text {
     position: absolute;
     right: 10%;
-    font-family: 'Momstype', Times, serif;
     transition: all .2s ease;
 }
 
@@ -103,7 +109,7 @@ body {
 @media only screen and (max-width: 1020px) {
     .hero-text {
         bottom: 180px;
-        font-size: 2em;
+        font-size: 2.2em;
     }
 }
 
