@@ -3,10 +3,13 @@ $(document).ready(function() {
         debugger;
         var visited = localStorage.getItem("visited");
         if (!visited) {
-            var cnt = parseInt(document.getElementById('count').innerHTML);
-            document.getElementById('count').innerHTML = ++cnt
-            localStorage.setItem("visited", "1");
+            $.post("http://stiff-fog.glitch.me/visitors", function( data ) {
+                console.log(data);
+            });
         }
+        $.get( "http://stiff-fog.glitch.me/visitors", function( data ) {
+            $( ".count" ).html( data.visits );
+        });
     } 
     $(window).on('mousemove touchmove', movedamnEyes);
 });
