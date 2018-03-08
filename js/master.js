@@ -8,7 +8,7 @@ $(document).ready(function() {
             });
         }
         $.get( "http://stiff-fog.glitch.me/visitors", function( data ) {
-            $( ".count" ).html( data.visits );
+            $( "#count" ).html( data.visits );
         });
     } 
     $(window).on('mousemove touchmove', movedamnEyes);
