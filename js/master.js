@@ -1,16 +1,16 @@
 $(document).ready(function() {
+    var url = "https://stiff-fog.glitch.me/visitors";
     if (typeof(Storage) !== "undefined") {
-        debugger;
         var visited = localStorage.getItem("visited");
         if (!visited) {
-            $.post("http://stiff-fog.glitch.me/visitors", function( data ) {
+            $.post(url, function( data ) {
                 console.log(data);
             });
         }
-        $.get( "http://stiff-fog.glitch.me/visitors", function( data ) {
-            $( "#count" ).html( data.visits );
-        });
-    } 
+    }
+    $.get( url, function( data ) {
+        $( "#count" ).html( data.visits );
+    }); 
     $(window).on('mousemove touchmove', movedamnEyes);
 });
 
