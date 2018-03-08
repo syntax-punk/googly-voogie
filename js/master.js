@@ -5,6 +5,7 @@ $(document).ready(function() {
         if (!visited) {
             $.post(url, function( data ) {
                 console.log(data);
+                localStorage.setItem('visited', '1');
             });
         }
     }
